@@ -1,0 +1,163 @@
+:root{
+    --primary-color-Pale-blue: hsl(225, 100%, 94%);
+    --primary-color-Bright-blue: hsl(245, 75%, 52%);
+
+    --secondary-color-Very-pale-blue: hsl(225, 100%, 98%);
+    --secondary-color-Desaturated-blue: hsl(224, 23%, 55%);
+    --secondary-color-Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    
+}
+
+.hero{
+    background-color: var(--primary-color-Pale-blue);
+    background-image: url('../images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+  
+    max-height: 100vh;
+    display: flex;
+   
+}
+
+.hero__container{
+    width: 90%;
+    max-width: 425px;
+    margin: auto auto;
+    
+    background-color: #fff;
+    box-shadow: 0 25px 15px rgb(221, 217, 243); /* rgb(220, 216, 247) */
+    
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hero__picture{
+    background-position: center;
+    
+}
+
+.hero__img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.hero__texts{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    width: 80%;
+    margin: 0 auto;
+   
+    gap: 1.5rem;
+}
+
+.hero__title{
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.hero__paragraph{
+    color: #7A7E98;
+    font-weight: 500;
+}
+
+.hero__icon{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.hero__plancharge{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8F9FE;
+    padding: 1.2rem 1rem;
+    border-radius: 10px;
+}
+
+.hero__annualplan{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.5;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__plan{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.hero__cost{
+    font-size: 14px;
+    color: #7A7E98;
+    
+}
+
+.hero__changeplan{
+    align-self: center;
+    font-size: 12px;
+    font-weight: 900;
+    color: var(--primary-color-Bright-blue);
+}
+
+.hero__buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hero__btn{
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.hero__btn--proceed{
+    background-color: var(--primary-color-Bright-blue);
+    padding: 1rem 0;
+    color: #fff;
+    border-radius: 11px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 2px 17px 10px rgba(228, 226, 249, 0.7);
+    
+    
+}
+
+.hero__btn--cancel{
+    font-weight: 700;
+    color: #747D99;
+    font-size: 14px;
+    padding-bottom: 2rem;
+}
+
+@media (min-width:768px) {
+    
+    .hero{
+        background-image: url('../images/pattern-background-desktop.svg');
+        background-repeat: no-repeat;
+        
+    }
+
+
+   
+}
+
+
+
